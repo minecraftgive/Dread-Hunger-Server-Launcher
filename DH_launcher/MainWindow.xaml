@@ -1,0 +1,69 @@
+﻿<Window FontFamily="./#苹方-简"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DH_launcher"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Name="Main" x:Class="DH_launcher.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Initialized="Window_Initialized" ResizeMode="CanMinimize" WindowStyle="ThreeDBorderWindow">
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="船神,启动!&#xD;&#xA;Server_Launch" Height="59">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="Launch_Button" Content="启动&#xD;&#xA;Launch" Height="65" Margin="536,269,0,0" VerticalAlignment="Top" Width="200" Click="Launch_Button_Click" Cursor="" HorizontalAlignment="Left"/>
+                    <ComboBox x:Name="Map_Selector" HorizontalAlignment="Left" Height="46" Margin="10,74,0,0" VerticalAlignment="Top" Width="260" SelectionChanged="Map_Selector_SelectionChanged" SelectedIndex="0"/>
+                    <Button x:Name="get_path" Content="选择服务器程序&#xD;&#xA;Server_DIR" HorizontalAlignment="Left" Height="50" Margin="546,80,0,0" VerticalAlignment="Top" Width="190" Click="get_path_Click"/>
+                    <TextBox x:Name="dhs_dir_tb" HorizontalAlignment="Left" Height="29" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="770" AllowDrop="True"/>
+                    <TextBox x:Name="server_port_tb" HorizontalAlignment="Left" Height="33" Margin="292,87,0,0" TextWrapping="Wrap" Text="7777" VerticalAlignment="Top" Width="90" TextChanged="server_port_TextChanged"/>
+                    <Button x:Name="kill" Content="关服(全部)&#xD;&#xA;KILLALL" HorizontalAlignment="Left" Height="64" Margin="32,269,0,0" VerticalAlignment="Top" Width="143" Click="kill_Click" Cursor="No"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="配置,自定义&#xD;&#xA;Config &amp; Customization" Height="59">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox HorizontalAlignment="Left" Height="375" VerticalAlignment="Center" Width="440" Background="#FFD2D2D2">
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="daysbeforeblizzard_s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="daysbeforeblizzard_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="dayminutes__s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="dayminutes_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="predatordamage_s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="predatordamage_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="coldintensity_s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="coldintensity_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="hungerrate_s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="hungerrate_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="coalburnrate_s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="coalburnrate_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                        <Grid Height="40" Width="400">
+                            <Slider x:Name="thralls_s" HorizontalAlignment="Left" Height="26" Margin="130,12,0,0" VerticalAlignment="Top" Width="260" AutoToolTipPlacement="TopLeft"/>
+                            <Label x:Name="thralls_l" Content="Label" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="115"/>
+                        </Grid>
+                    </ListBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="补丁&#xD;&#xA;Patched" IsEnabled="False" Height="59">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="关于&#xD;&#xA;About" Height="59">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
