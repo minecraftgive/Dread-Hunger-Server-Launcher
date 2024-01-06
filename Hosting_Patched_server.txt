@@ -1,4 +1,4 @@
-
+!!!!!I AM NOT THE CREATOR OF PATCHES,I AM JUST REPOST HERE AND GIVE INSTRUCTIONS!!!!!
 
 First,Go 'dread hunger/binaries/win64/'(where the true server exe)
 To replace the server exeuable,unzip "Patched_exe.zip" here to cover it and keep other files here.
