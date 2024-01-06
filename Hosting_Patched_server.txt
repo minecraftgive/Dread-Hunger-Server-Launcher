@@ -1,0 +1,31 @@
+
+
+First,Go 'dread hunger/binaries/win64/'(where the true server exe)
+To replace the server exeuable,unzip "Patched_exe.zip" here to cover it and keep other files here.
+
+*missing,rewrite later. late night china,im sry.*
+（Should similar to screenshot) 
+
+Second,open patches.zip and chose what you want to add to server,then put patches into 'patches' folder (dread hunger/binaries/win64/patches)
+You are all set ! And enjoy gaming!
+
+Additional:
+!!spell patches should only enable one!!
+Map code:
+
+Expanse_persistent
+
+Approach_persistent
+
+Departure_persistent
+
+Tips in spell_fix_set_win64.js
+Eng ver
+
+'SpellSelection' are equipped spells
+2 sets should have same amount spells or get crashed
+0 is cannibal attack
+1 is whiteout
+2 is Doppelganger
+3 is Spirit walk
+4 is hush
