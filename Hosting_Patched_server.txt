@@ -11,6 +11,9 @@ You are all set ! And enjoy gaming!
 
 Additional:
 !!spell patches should only enable one!!
+
+Hush_c4 means using hush to explode all nitro on ground
+
 Map code:
 
 Expanse_persistent
